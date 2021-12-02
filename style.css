@@ -1,0 +1,30 @@
+/* .prin{
+    background-image: url('image.jpg');
+} */
+body{
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.BONJOUR{
+    /* background: white; */
+    white-space: normal;
+    TEXT-ALIGN: center;
+    MARGIN-LEFT: 38%;
+    MARGIN-TOP: 160PX;
+    WIDTH: 225PX;
+    HEIGHT: 80PX;
+    /* opacity: 50%; */
+}
+.Img-play{
+    WIDTH: 334PX;
+    MARGIN-LEFT: 34%;
+    cursor: pointer;
+    margin-top: 135PX;
+
+}
+.Img-logo{
+    MARGIN-TOP: -44PX;
+    width: 72%;
+}
+

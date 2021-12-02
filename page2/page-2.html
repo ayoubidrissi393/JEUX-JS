@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="playing-zone">
+        <h3 class="premier-H"> Devinez un Nombre entre 0 A 100 : </h3>
+        <input type="number" id="zone-text" class="num">
+        <div class="tentatives"> 
+            <h3 class="deuxiem-H">Nombre de tentatives :</h3>
+            <p><span id="try">10</span>/10</p>
+        </div>
+       
+        <button onclick="guess()" id="BTN1">VALIDER</button>
+    </div>
+    <div class="commentier-zone1" id="zone1" >
+        <h2>Félicitations</h2>
+        <h3 id="premier_commentier"> vous avez gagné après : <span id="NBR-TENT">X</span> tentatives </h3>
+        <h3 id="deuxiem_commentier">Bravo, vous etes un Génie !!! </h3>
+    </div>
+    <div class="commentier-zone1" id="zone2">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+        <h2>Oooops</h2>
+        <h3>C'est raté </h3>
+    </div>
+
+    <script>
+        var num= document.getElementById('zone-text');
+        var n=Math.floor(Math.random()*100);
+        var n=16;
+        // var result=document.getElementsByClassName('commentier-zone1')
+        var tries=10;
+        var try_par = document.getElementById('try');
+        var z1 = document.getElementById('zone1');
+        var z2 = document.getElementById('zone2');
+        var NBR_TE=document.getElementById("NBR-TENT");
+        function guess(){
+
+            if (tries <= 1){
+               z2.style.display = "block"
+                try_par.innerHTML=tries;
+               
+            }
+            else{
+                if(num.value == n)
+                {
+                    if(tries>=8)
+                        {
+                            z1.style.display = "block";
+                            document.getElementById("deuxiem_commentier").style.display = "block";
+                        }
+                    else
+                        { 
+                            z1.style.display = "block";
+                            document.getElementById("premier_commentier").style.display = "block";
+                            // NBR_TE=tries;
+                            NBR_TE.innerHTML = 10-tries;
+                            // alert("vous avez gagné après :"++" tentatives")
+                        }
+                }  
+                else { 
+                    if(num.value < n)
+                        {
+                            tries--;
+                            try_par.innerHTML = tries;
+                            alert("le numbre a petit");
+                        }
+                     else 
+                    {
+                        tries--;
+                        try_par.innerHTML = tries;
+                        alert("le numbre a grande");    
+                    }}
+        }
+    }  
+    </script>
+</body>
+</html>

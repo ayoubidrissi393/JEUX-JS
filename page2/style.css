@@ -1,0 +1,65 @@
+body{
+    background-image: url('image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.playing-zone{
+    background-color: rgb(177, 175, 170);
+    margin-top: 5%;
+    height: 202px;
+    TEXT-ALIGN: center;
+    WIDTH: 31%;
+    MARGIN-LEFT: 32%;
+    /* position: fixed; */
+
+}
+/* .tentatives{
+    position: fixed;
+
+} */
+.premier-H{
+        padding-top: 23px;
+}
+.deuxiem-H{
+    /* MARGIN-BOTTOM: 22PX;
+    MARGIN-TOP: -37PX;
+    MARGIN-LEFT: 208PX; */
+    MARGIN-BOTTOM: -34PX;
+    MARGIN-TOP: 25PX;
+    MARGIN-LEFT: -39PX;
+
+}
+#try{
+    margin-left: 190px;
+}
+#BTN1{
+    margin-top: 10px;
+    height: 30PX;
+    width: 108PX;
+    BORDER-RADIUS: 10PX;
+}
+.commentier-zone1{
+    PADDING: 8PX;
+    background-color: rgb(177, 175, 170);
+    margin-top: 64PX;
+    text-align: center;
+    width: 38%;
+    MARGIN-LEFT: 28%;
+    /* display: none; */
+}
+.NBR-TENT{
+    color: crimson;
+}
+#premier_commentier{
+    display: none;
+}
+#deuxiem_commentier{
+    display: none;
+}
+#zone1{
+    display: none;
+}
+#zone2{
+    display: none;
+}
+
